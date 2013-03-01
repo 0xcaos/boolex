@@ -2,8 +2,8 @@ package net.caoticode
 
 package object boolex {
   implicit class BoolexOPS[T](op1: T) {
-    def &&&[A >: T](op2: => A): A = if (toBool) op2 else op1
-    def |||[A >: T](op2: => A): A = if (toBool) op1 else op2
+    def &&[A >: T](op2: => A): A = if (toBool) op2 else op1
+    def ||[A >: T](op2: => A): A = if (toBool) op1 else op2
     
     def toBool: Boolean = any2Boolean(op1)
   }
