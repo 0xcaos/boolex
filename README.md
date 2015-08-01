@@ -9,6 +9,8 @@ including net.caoticode.boolex._ allows to:
 
 for example:
 ```scala
+import net.caoticode.boolex._
+
 val something = "Hi!"
 val nothing = ""
 
@@ -17,7 +19,23 @@ val nothing = ""
 
 the values considered false are:
 * empty Strings
-* a Number equals to 0
+* a Number equal to 0
 * an empty Traversable
 * the Boolean false
 * null and None
+
+## Build and install
+
+clone and intall it into local repository
+
+```bash
+git clone https://github.com/mdread/boolex.git
+cd boolex
+sbt publishLocal
+```
+
+then declare it as a dependency
+
+```
+libraryDependencies += "net.caoticode.boolex" %% "boolex" % "1.0.0"
+```
