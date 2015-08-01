@@ -9,9 +9,9 @@ object BoolexBuild extends Build {
     settings = Project.defaultSettings ++ Seq(
       name := "boolex",
       organization := "net.caoticode.boolex",
-      version := "0.1-SNAPSHOT",
-      scalaVersion := "2.10.0"
-      // add other settings here
+      version := "1.0.0",
+      scalaVersion := "2.11.7",
+      crossScalaVersions := Seq("2.10.5", "2.11.7")
     )
   )
 }
