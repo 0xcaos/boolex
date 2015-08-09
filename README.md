@@ -26,16 +26,15 @@ the values considered false are:
 
 ## Build and install
 
-clone and intall it into local repository
-
-```bash
-git clone https://github.com/mdread/boolex.git
-cd boolex
-sbt publishLocal
-```
-
-then declare it as a dependency
-
+add the following line to **sbt** build file
 ```
 libraryDependencies += "net.caoticode.boolex" %% "boolex" % "1.0.0"
+```
+
+or clone and package it
+
+```
+git clone https://github.com/mdread/boolex.git
+cd boolex
+sbt package
 ```
