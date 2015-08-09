@@ -1,5 +1,9 @@
 package net.caoticode
 
+/**
+ * @author Daniel Camarda <maniacal.dread@gmail.com>
+ */
+
 package object boolex {
   implicit class BoolexOPS[T](op1: T) {
     def &&[A >: T](op2: => A): A = if (toBool) op2 else op1
