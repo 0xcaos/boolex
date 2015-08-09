@@ -31,10 +31,14 @@ add the following line to **sbt** build file
 libraryDependencies += "net.caoticode.boolex" %% "boolex" % "1.0.0"
 ```
 
-or clone and package it
+or clone and package it manually
 
 ```
 git clone https://github.com/mdread/boolex.git
 cd boolex
 sbt package
 ```
+
+## Note
+
+The library is cross compiled for scala 2.10/2.11
